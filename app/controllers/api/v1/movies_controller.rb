@@ -48,7 +48,14 @@ class Api::V1::MoviesController < ApplicationController
         @movie.destroy
     end
 
+    # get our Amazon s3 keys for image uploads
 
+    def get_upload_credentials
+        @accessKey = ENV['S3_ACCESS']
+        @secretKey = ENV['S3_SECRET']
+        render json : { accessKey: @accessKey, secretKey: @secretKey}
+    end
+    
     private
     #methods we write under private can only be accessed in this controller.
 
