@@ -36,7 +36,7 @@ module MovieApi
   end
 
 env_file = File.join(Rails.root, 'config', 'local.env.yml')
-if File.exist(env_file)
+if File.exist?(env_file)
   YAML.load(File.open(env_file)).each do |key, value|
     ENV[key to_s] = value
   end
