@@ -24,6 +24,9 @@ default: &default
 development:
   <<: *default
   database: movie_api_development
+  username: 'Jacquelyn Kiefner'
+  password: test
+
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
