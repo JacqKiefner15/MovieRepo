@@ -3,6 +3,10 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d16f2dd2-829f-4c93-9b55-e65bf1d5d92d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,28 +14,147 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1gBruDDYCeRQEz6lSjj8PNdmvJt" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="false" RAKE_SPRING_PRE_LOADER_OPTION="false" RAILS_SPRING_PRE_LOADER_OPTION="false" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d16f2dd2-829f-4c93-9b55-e65bf1d5d92d" name="Default Changelist" comment="" />
+      <created>1597599047136</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597599047136</updated>
+      <workItem from="1597599048712" duration="563000" />
+      <workItem from="1597601193473" duration="3539000" />
+      <workItem from="1597677533433" duration="19982000" />
+      <workItem from="1598022954371" duration="3089000" />
+    </task>
+    <task id="LOCAL-00001" summary="Add Set our review">
+      <created>1597949626018</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1597949626019</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add Set our review">
+      <created>1597950019754</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1597950019754</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add Set our review">
+      <created>1598025571054</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1598025571054</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add Set our review">
+      <created>1598025580194</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1598025580194</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Users" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Reviews controller changes" />
+    <MESSAGE value="Add Set our review" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Set our review" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="1090" y="268" width="670" height="676" key="search.everywhere.popup" timestamp="1597353175289">
+    <state x="496" y="225" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598024157334">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="496" y="225" key="#com.intellij.execution.impl.EditConfigurationsDialog/1792.-1112.3840.2160/0.0.1792.1120@0.0.1792.1120" timestamp="1598024157334" />
+    <state x="715" y="340" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597964263299">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="715" y="340" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1597964263299" />
+    <state x="639" y="186" key="RollbackChangesDialog" timestamp="1598025552780">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="639" y="186" key="RollbackChangesDialog/1792.-1112.3840.2160/0.0.1792.1120@0.0.1792.1120" timestamp="1598025552780" />
+    <state x="397" y="210" key="SettingsEditor" timestamp="1598035499290">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="1090" y="268" width="670" height="676" key="search.everywhere.popup/1792.-1089.3840.2137/0.23.1792.1097@0.23.1792.1097" timestamp="1597353175289" />
+    <state x="397" y="210" key="SettingsEditor/0.23.1792.1097@0.23.1792.1097" timestamp="1598035499290" />
+    <state x="2120" y="692" key="Vcs.Push.Dialog.v2" timestamp="1597949628637">
+      <screen x="0" y="23" width="3360" height="1867" />
+    </state>
+    <state x="2120" y="692" key="Vcs.Push.Dialog.v2/0.23.3360.1867@0.23.3360.1867" timestamp="1597949628637" />
+    <state x="638" y="289" width="646" height="522" key="find.popup" timestamp="1597967412118">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="638" y="289" width="646" height="522" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1597967412118" />
+    <state x="1116" y="505" width="1129" height="881" key="find.popup/0.0.3360.1890@0.0.3360.1890" timestamp="1597945151519" />
+    <state x="595" y="299" width="602" height="522" key="find.popup/1792.-1112.3840.2160/0.0.1792.1120@0.0.1792.1120" timestamp="1597783197663" />
+    <state x="1168" y="241" width="719" height="666" key="search.everywhere.popup" timestamp="1597968990994">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1168" y="241" width="719" height="666" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1597968990994" />
+    <state x="2044" y="422" width="1259" height="1166" key="search.everywhere.popup/0.0.3360.1890@0.0.3360.1890" timestamp="1597950518524" />
+    <state x="2044" y="440" width="1257" height="1151" key="search.everywhere.popup/0.23.3360.1867@0.23.3360.1867" timestamp="1597949538556" />
+    <state x="1090" y="268" width="670" height="676" key="search.everywhere.popup/1792.-1089.3840.2137/0.23.1792.1097@0.23.1792.1097" timestamp="1597602312070" />
   </component>
 </project>

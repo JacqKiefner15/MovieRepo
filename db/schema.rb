@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_20_153133) do
+ActiveRecord::Schema.define(version: 2020_08_17_152729) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 2020_08_20_153133) do
     t.string "image"
     t.integer "duration"
     t.integer "total_gross"
-    t.string "cast_list"
+    t.string "cast"
     t.string "parental_rating"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 2020_08_20_153133) do
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.float "rating"
     t.index ["movie_id"], name: "index_reviews_on_movie_id"
     t.index ["user_id"], name: "index_reviews_on_user_id"
   end
@@ -45,9 +46,9 @@ ActiveRecord::Schema.define(version: 2020_08_20_153133) do
     t.string "email"
     t.string "password_digest"
     t.string "token"
-    t.string "nickname"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "nickname"
   end
 
   add_foreign_key "reviews", "movies"
