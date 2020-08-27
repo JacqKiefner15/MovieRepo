@@ -1,76 +1,63 @@
 class Api::V1::MoviesController < ApplicationController
+  before_action :set_movie, only: [:show, :update, :destroy]
+  skip_before_action :authenticate, only: [:index, :show]
 
-    before_action :set-movie, only: [:show, :update, :destroy]
+  # GET /movies
+  def index
+    @movies = Movie.all
+    render json: @movies
+  end
 
-    skip_before action :authenticate, only: [:index, show]
-    #get/movies
-    def index
-        @movies = Movie.All 
-        render json: @movies
+  #GET /movies/1
+  def show
+    @reviews = Review.where(movie_id: params[:id])
+    render json: { movie: @movie, reviews: @reviews }
+  end
 
+  #POST /movies
+  def create
+    @movie = Movie.new(movie_params)
+    if @movie.save
+      render json: @movie
+    else
+      render json: @movie.errors, status: :unprocessable_entity
+    end
+  end
+
+  #PATCH/PUT /movies/1
+  def update
+    if @movie.update(movie_params)
+      render json: @movie
+    else
+      render json: @movie.errors, status: :unprocessable_entity
     end
 
-    #get/movies/l
+  end
 
-    def show 
-        @reviews = Review.where(movie_id:params[:id])
-        render json: {movie @movie, reviews:@reviews}
+  #DELETE /movies/1
+  def destroy
+    @movie.destroy
+  end
 
-    end
+  # Get our Amazon S3 Keys for image uploads
+  def get_upload_credentials
+    @accessKey = ENV['S3_ACCESS']
+    @secretKey = ENV['S3_SECRET']
+    render json: { accessKey: @accessKey, secretKey: @secretKey}
+  end
 
-    #post /movies
+  private
+  # Methods we place in private can only be accessed by other methods on our movies controller
 
-    def create
-        @movie = Movie.new(movie_params)
-        if @movie.save
-            render json: @movie
-        else
-            render json: @movie.errors, status :unprocessable_entity
-        end
+  # In our set_movie I noticed I had @movie as @Movie, this will not work as we are calling it with a lowercase m everywhere-else
+  # Make sure to correct this typo If it is in your project
+  def set_movie
+    @movie = Movie.find(params[:id])
+  end
 
-    end
-
-    #patch/put /movies.1
-
-    def update
-        if @movie.update(movie_params)
-            render json: @movie
-        else
-            render jon: @movie.errors, status :unprocessable_entity
-        end
-
-    end
-
-
-    #delete /movies/1
-
-    def destroy
-        @movie.destroy
-    end
-
-    # get our Amazon s3 keys for image uploads
-
-    def get_upload_credentials
-        @accessKey = ENV['S3_ACCESS']
-        @secretKey = ENV['S3_SECRET']
-        render json : { accessKey: @accessKey, secretKey: @secretKey}
-    end
-    
-    private
-    #methods we write under private can only be accessed in this controller.
-
-    def set_movie
-        @Movie = Movie.find(params[:id])
-    end
-
-    def movie_params
-        params.require(:movie).permit(:title, :description, :parental_rating, :year, :total_gross, :duration, :image, :cast_list, :director)
-    end
-
-
+  def movie_params
+    params.require(:movie).permit(:title, :description, :parental_rating, :year, :total_gross, :duration, :image, :cast, :director)
+  end
 
 
 end
-
-
-# pagination: creates a certain set of items per page

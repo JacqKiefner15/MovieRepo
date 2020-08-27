@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: movie_api_development
+  database: fresh_tomatoes_development
   username: 'Jacquelyn Kiefner'
   password: test
 
@@ -60,7 +60,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: movie_api_test
+  database: fresh_tomatoes_test
   username: 'Jacquelyn Kiefner'
   password: test
 
@@ -85,6 +85,6 @@ test:
 #
 production:
   <<: *default
-  database: movie_api_production
+  database: fresh_tomatoes_production
   username: 'Jacquelyn Kiefner'
   password: test

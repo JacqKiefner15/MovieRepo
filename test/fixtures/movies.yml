@@ -8,7 +8,7 @@ one:
   image: MyString
   duration: 1
   total_gross: 1
-  cast_list: MyString
+  cast: MyString
   parental_rating: MyString
 
 two:
@@ -19,5 +19,5 @@ two:
   image: MyString
   duration: 1
   total_gross: 1
-  cast_list: MyString
+  cast: MyString
   parental_rating: MyString
