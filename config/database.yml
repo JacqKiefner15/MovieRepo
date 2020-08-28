@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: fresh_tomatoes_development
+  database: fresh_tomatoes_development1
   username: 'Jacquelyn Kiefner'
   password: test
 
@@ -60,7 +60,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: fresh_tomatoes_test
+  database: fresh_tomatoes_test1
   username: 'Jacquelyn Kiefner'
   password: test
 
